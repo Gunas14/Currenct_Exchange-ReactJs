@@ -1,0 +1,31 @@
+#historyDiv{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+#searchBarDiv{
+    height: 60px;
+    /* background-color: aquamarine */
+}
+#searchInputGroup{
+    width: 70%;
+}
+
+#getHistoryBtn{
+    margin-left: 1%;
+    width: 200px;
+    height: 45px;
+}
+
+#historyTblDiv {
+    margin-top: 5px;
+    height: 79vh;
+    overflow: scroll;
+    /* background-color: blueviolet */
+}
+.btn-group{
+    margin-left: 4%;
+    height: 45px;
+}

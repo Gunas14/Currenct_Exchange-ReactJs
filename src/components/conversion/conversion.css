@@ -1,0 +1,29 @@
+#conversionDiv{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+#conversionInputDiv{
+    display: flex;
+}
+
+ #conversionInputLeftDiv{
+   position: relative;
+}
+
+#conversionInputRightDiv{
+    position: relative;
+    border-right: 2px solid #006aff91;
+} 
+
+.inputDivs{
+    padding-top: 2%;
+    width: 50%;
+    height : 40vh;
+    min-height: 100px;
+    padding-left: 1%;
+    padding-right: 1%;
+    overflow: visible;
+    border-left: 2px solid #006aff91;
+}

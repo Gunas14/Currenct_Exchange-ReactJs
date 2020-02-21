@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import nav from 'react-bootstrap/Nav';
+import home from './components/home/home';
+import history from './components/history/history';
+import currency from './components/currency/currency';
+import conversion from './components/conversion/conversion';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div id="mainDiv">
+      <nav className="navbar navbar-expand-lg navbar-dark  bg-primary">
+        <Link className="navbar-brand" to="/home">Home</Link>
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <Link className="nav-link" to="/currency">Currency list</Link>
+          </li> 
+          <li className="nav-item">
+            <Link className="nav-link" to="/history">History</Link>
+          </li> 
+          <li className="nav-item">
+            <Link className="nav-link" to="/conversion">Conversion</Link>
+          </li> 
+        </ul>
+      </nav>
+        <Route exact path="/home" component={home} />
+        <Route path="/currency" component={currency} />
+        <Route path="/history" component={history} />
+        <Route path="/conversion" component={conversion} />
+      </div>
+    </Router>
   );
 }
+
 
 export default App;

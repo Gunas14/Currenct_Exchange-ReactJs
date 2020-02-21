@@ -1,0 +1,38 @@
+.minMaxDetails{
+    height: 20vh;
+    background-color: antiquewhite;
+    margin-top: 1%;
+    border-left: 2px solid #006aff91;
+}
+.subHeaderLabel{
+    float: left;
+}
+.dateLabel{
+    width : 100%;
+    text-align: center;
+    color: #006aff;
+    /* background-color: blue; */
+    margin-top: 3vh;
+    float:left; 
+    clear: left;
+}
+
+.baseCurrencySpan{
+    width: 25vw;
+}
+
+.targetCurrencySpan{
+    width: 25vw;
+}
+
+.currencyName{
+    margin-top: 5vh;
+    width: 100%;
+    text-align: center;
+    color: #006aff;
+}
+
+.currencyValue{
+    width: 100%;
+    text-align: center
+}
